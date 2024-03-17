@@ -1,7 +1,7 @@
 import React from 'react';
 import './Login.css'; // Import CSS file for styling
 
-const Home = () => {
+const Login = () => {
   return (
     <div className="home-container">
 
@@ -16,10 +16,30 @@ const Home = () => {
       <div className='tagline'>
         #We are Electric
       </div>
+    
+        <input
+          type="email"
+          placeholder="E-mail"
+          className="input-email"
+        />
+        <input
+          type="password"
+          placeholder="Password"
+          className="input-pswd"
+        />
+        <button className="login-button">Login</button>
+        <div className='forgot-password'>
+            Forgot Password?
+        </div>
+
+
     </div>
 
     
   );
 };
 
-export default Home;
+
+
+export default Login; 
+ 
