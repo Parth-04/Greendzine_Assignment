@@ -1,7 +1,7 @@
 .home-container {
     position: relative;
-    width: 100vw; /* Full width of the viewport */
-    height: 100vh; /* Full height of the viewport */
+    width: 100vw;
+    height: 100vh;
     background: transparent linear-gradient(180deg, #000000 0%, #000E09 100%) 0% 0% no-repeat padding-box;
     mix-blend-mode: normal;
     /* border-radius: 28px; */
