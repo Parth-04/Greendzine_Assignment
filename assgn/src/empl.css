@@ -29,3 +29,39 @@
     color: #FFFFFFB3;
     opacity: 1;
 }
+
+.empl{
+    position: absolute;
+    bottom:0px;
+    right: 0px;
+    height:63px;
+    width: 50vw;
+    background: #38383880 0% 0% no-repeat padding-box;
+    mix-blend-mode: normal;
+    border: 1px solid #000000;
+    opacity: 1;
+    filter: blur(7px);
+}
+
+.home_button{
+    position: absolute;
+    bottom:22.5px;
+    right: 68.5vw;
+    background: #38383880 0% 0% no-repeat padding-box;
+    color: #36A546;
+    opacity: 1;
+}
+
+.empl_button{
+    position: absolute;
+    bottom:22.5px;
+    left: 68.5vw;
+    background: #38383880 0% 0% no-repeat padding-box;
+    color: #36A546;
+    opacity: 1;
+
+}
+
+.cards{
+    background-color: white;
+}

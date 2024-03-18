@@ -1,7 +1,20 @@
 import React from 'react';
 import './Home.css';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+    const navigate = useNavigate();
+
+    const handleEmpl = () => {
+        console.log('Employee Dashboard');
+        navigate('/empl')
+    };
+
+    const handleHome = () => {
+        console.log('Home');
+        navigate('/home');
+    };
+    
     return (
         <div className='Home-container'>
 
@@ -93,7 +106,13 @@ const Home = () => {
                 </div>
             </div>
 
-        </div>
+            <div className='home'>
+            </div>
+            <button onClick={handleHome} className='home_button'>Home</button>
+
+            <button onClick={handleEmpl} className='empl_button'>Empl</button>
+
+            </div>
 
     );
 };
