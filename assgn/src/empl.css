@@ -63,5 +63,9 @@
 }
 
 .cards{
+    position: absolute;
     background-color: white;
+    top: 50px;
+    height: 500px;
+    width: 200px;
 }

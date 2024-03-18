@@ -10,7 +10,7 @@ const Empl = () => {
     useEffect(() => {
         const fetchData = async () => {
           const db = firebase.firestore();
-          const data = await db.collection("employees").get();
+          const data = await db.collection("ID1").get();
           setEmployees(data.docs.map(doc => ({ id: doc.id, ...doc.data() })));
         };
 
@@ -53,7 +53,17 @@ const Empl = () => {
         </div>
 
         <div className='cards'>
-      
+        <ul>
+        {employees.map(employee => (
+            <div className='card'>
+            <li key={employee.id}>
+            <strong>Name:</strong> {employee.Name}
+            {employee.id} {employee.Role}
+          </li>
+            </div>
+          
+        ))}
+      </ul>
         </div>
 
 
