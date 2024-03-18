@@ -68,7 +68,30 @@ input{
 .cards{
     position: absolute;
     background-color: white;
+    color: white;
     top: 300px;
+    left: 0;
+    right: 0;
+    margin: auto;
     height: 500px;
-    width: 200px;
+    width: 300px;
+    background: transparent linear-gradient(180deg, #000000 0%, #000E09 100%) 0% 0% no-repeat padding-box;
+}
+
+.card{
+    position: static;
+    padding: 5px;
+    margin: 10px;
+    border-width: 10px;
+    border-color: white;
+    width: 300px;
+    height: auto;
+    background-color: #5E5E5E82;
+    border-radius: 10px;
+    color: white;
+}
+
+span{
+    display: block;
+    padding: 5px;
 }

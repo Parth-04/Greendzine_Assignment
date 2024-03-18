@@ -65,20 +65,36 @@ const Empl = () => {
         
 
         <div className='cards'>
-                <ul>
+                
                     {loading ? (
                         <p>Loading...</p>
                     ) : (
-                        filteredEmployees.map(employee => (
-                            <div className='card' key={employee.id}>
-                                <li>
-                                    <strong>Name:</strong> {employee.Name}, <strong>Role:</strong> {employee.Role}
-                                    {/* Add more fields as needed */}
-                                </li>
-                            </div>
-                        ))
+                        searchQuery === '' ? (
+                            employees.map(employee => (
+                                <div className='card' key={employee.id}>
+                                    
+                                        <span>EMP ID: {employee.id} </span> 
+                                        <span>Name: {employee.Name}</span> 
+                                        <span>DOB: {employee.Date_of_Birth}</span> 
+                                        <span>Role: {employee.Role}</span> 
+                                
+                                    
+                                </div>
+                            ))
+                        ) : (
+                            filteredEmployees.map(employee => (
+                                <div className='card' key={employee.id}>
+                                    
+                                        <span>EMP ID: {employee.id}</span>
+                                        <span>Name: {employee.Name}</span> 
+                                        <span>DOB: {employee.Date_of_Birth}</span> 
+                                        <span>Role: {employee.Role}</span> 
+                                    
+                                </div>
+                            ))
+                        )
                     )}
-                </ul>
+                
             </div>
 
         {/* <div className='cards'>
