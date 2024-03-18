@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.581c1c6a.css",
-    "main.js": "/static/js/main.6d0b4e99.js",
-    "static/js/453.dbc9a426.chunk.js": "/static/js/453.dbc9a426.chunk.js",
-    "index.html": "/index.html",
-    "main.581c1c6a.css.map": "/static/css/main.581c1c6a.css.map",
-    "main.6d0b4e99.js.map": "/static/js/main.6d0b4e99.js.map",
-    "453.dbc9a426.chunk.js.map": "/static/js/453.dbc9a426.chunk.js.map"
+    "main.css": "/Greendzine_Assignment/assgn/static/css/main.581c1c6a.css",
+    "main.js": "/Greendzine_Assignment/assgn/static/js/main.fe1ab6b2.js",
+    "static/js/453.dbc9a426.chunk.js": "/Greendzine_Assignment/assgn/static/js/453.dbc9a426.chunk.js",
+    "index.html": "/Greendzine_Assignment/assgn/index.html",
+    "main.581c1c6a.css.map": "/Greendzine_Assignment/assgn/static/css/main.581c1c6a.css.map",
+    "main.fe1ab6b2.js.map": "/Greendzine_Assignment/assgn/static/js/main.fe1ab6b2.js.map",
+    "453.dbc9a426.chunk.js.map": "/Greendzine_Assignment/assgn/static/js/453.dbc9a426.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.581c1c6a.css",
-    "static/js/main.6d0b4e99.js"
+    "static/js/main.fe1ab6b2.js"
   ]
 }
