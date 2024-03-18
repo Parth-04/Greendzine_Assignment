@@ -6,12 +6,15 @@ import { useNavigate } from 'react-router-dom';
 
 const Empl = () => {
     const [employees, setEmployees] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [searchQuery, setSearchQuery] = useState('');
 
     useEffect(() => {
         const fetchData = async () => {
-          const db = firebase.firestore();
-          const data = await db.collection("ID1").get();
-          setEmployees(data.docs.map(doc => ({ id: doc.id, ...doc.data() })));
+            const db = firebase.firestore();
+            const data = await db.collection("ID1").get();
+            setEmployees(data.docs.map(doc => ({ id: doc.id, ...doc.data() })));
+            setLoading(false);
         };
 
         fetchData();
@@ -29,6 +32,14 @@ const Empl = () => {
         navigate('/home');
     };
 
+    const handleSearch = (event) => {
+        setSearchQuery(event.target.value);
+    };
+
+    const filteredEmployees = employees.filter(employee =>
+        employee.Name.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+
     return (
         <div className='Home-container'>
 
@@ -45,14 +56,32 @@ const Empl = () => {
         <div className='lady_img'>
         </div>
 
-        <div className='search'>
-        </div>
-
-        <div className='search_text'>
-            Search with name
-        </div>
+        <input
+                    type="text"
+                    placeholder="Search by name"
+                    value={searchQuery}
+                    onChange={handleSearch}
+                />
+        
 
         <div className='cards'>
+                <ul>
+                    {loading ? (
+                        <p>Loading...</p>
+                    ) : (
+                        filteredEmployees.map(employee => (
+                            <div className='card' key={employee.id}>
+                                <li>
+                                    <strong>Name:</strong> {employee.Name}, <strong>Role:</strong> {employee.Role}
+                                    {/* Add more fields as needed */}
+                                </li>
+                            </div>
+                        ))
+                    )}
+                </ul>
+            </div>
+
+        {/* <div className='cards'>
         <ul>
         {employees.map(employee => (
             <div className='card'>
@@ -64,7 +93,7 @@ const Empl = () => {
           
         ))}
       </ul>
-        </div>
+        </div> */}
 
 
 
