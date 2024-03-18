@@ -2,6 +2,7 @@
   "name": "assgn",
   "version": "0.1.0",
   "private": true,
+  "homepage": " https://parth-04.github.io/Greendzine_Assignment/assg",
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.11",
     "@react-navigation/native": "^6.1.16",
@@ -48,4 +49,5 @@
   "devDependencies": {
     "gh-pages": "^6.1.1"
   }
+  
 }
