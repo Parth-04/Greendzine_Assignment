@@ -81,8 +81,9 @@ input{
 .card{
     position: static;
     padding: 5px;
-    margin: 10px;
-    border-width: 10px;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
     border-color: white;
     width: 300px;
     height: auto;
@@ -94,4 +95,16 @@ input{
 span{
     display: block;
     padding: 5px;
+}
+
+.sign_out{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #5E5E5E82;
+    width: 60px;
+    color: white;
+    font-size: 10px;
+    font-family: 'Mulish';
+
 }

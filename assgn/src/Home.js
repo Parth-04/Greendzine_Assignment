@@ -14,9 +14,18 @@ const Home = () => {
         console.log('Home');
         navigate('/home');
     };
+
+    const handleSignOut = (event) => {
+        console.log("Sign Out");
+        navigate('/login');
+    }
     
     return (
         <div className='Home-container'>
+
+            <div className='sign_out'>
+            <button onClick={handleSignOut} className='sign_out'>Sign Out</button>
+            </div>
 
             <div className='logo_home'>
             </div>

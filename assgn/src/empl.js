@@ -40,8 +40,19 @@ const Empl = () => {
         employee.Name.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
+    const handleSignOut = (event) => {
+        console.log("Sign Out");
+        navigate('/login');
+    }
+
     return (
+        
+
         <div className='Home-container'>
+
+        <div className='sign_out'>
+        <button onClick={handleSignOut} className='sign_out'>Sign Out</button>
+        </div>
 
         <div className='logo_home'>
         </div>
@@ -97,24 +108,6 @@ const Empl = () => {
                 
             </div>
 
-        {/* <div className='cards'>
-        <ul>
-        {employees.map(employee => (
-            <div className='card'>
-            <li key={employee.id}>
-            <strong>Name:</strong> {employee.Name}
-            {employee.id} {employee.Role}
-          </li>
-            </div>
-          
-        ))}
-      </ul>
-        </div> */}
-
-
-
-
-        
         <div className='footer'>
                 <img src='' />
                 <div className='footer_home'>
